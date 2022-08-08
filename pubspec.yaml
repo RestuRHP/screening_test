@@ -2,6 +2,7 @@ name: sm_test
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
 version: 1.0.0+1
 
 environment:
@@ -11,41 +12,78 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  cupertino_icons: ^1.0.2
-
-  #state_management
-  get: ^4.6.5
-
   # Http
   dio: ^4.0.4
+  retrofit: ^3.0.1+1
   pretty_dio_logger: ^1.1.1
 
-  # Network Image
-  cached_network_image: ^3.2.1
+  # State Management
+  get: ^4.6.1
+
+  # Intl
+  intl: ^0.17.0
+
+  # Loading
+  flutter_easyloading: ^3.0.3
 
   # Toast
   fluttertoast: ^8.0.8
 
+  # Network Image
+  cached_network_image: ^3.2.1
+
+  # Carousel
+  carousel_slider: ^4.1.1
+
+  # HIVE NoSQL Database
+  hive: ^2.2.3
+
+  # Render HTML
+  flutter_html: ^2.2.1
+
+  # Convert XML To Json
+  xml2json: ^5.3.3
+
+  # Json Serializable
+  json_serializable: ^6.3.1
+
+  # Star
+  flutter_rating_bar: ^4.0.1
+
+  # Path
+  path_provider: ^2.0.11
+
+  tuple: ^2.0.0
+
+  cupertino_icons: ^1.0.2
+
   # SVG
   flutter_svg: ^0.23.0+1
 
-  # Webview
-  webview_flutter: ^3.0.0
+  youtube_player_iframe: ^2.3.0
+
+
+
+dependency_overrides:
+  xml: ^6.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  build_runner:
+  retrofit_generator: ^4.0.1
+  json_annotation: ^4.6.0
 
 flutter:
+
   uses-material-design: true
 
   assets:
-    - assets/svg/
-    - assets/img/
     - assets/font/
+    - assets/img/
+    - assets/svg/
 
   fonts:
     - family: Poppins

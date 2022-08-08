@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:sm_test/apps.dart';
-import 'package:sm_test/common/api/api.dart';
+
+import 'data/network/rest_client.dart';
 
 void main() {
 
@@ -15,7 +16,7 @@ void main() {
     DeviceOrientation.portraitDown
   ]);
 
-  Get.put(ApiType.development,permanent: true);
+  Get.lazyPut(() => RestClient()..initializeDio(),fenix: true);
 
   runApp(Apps());
 }

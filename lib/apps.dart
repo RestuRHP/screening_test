@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sm_test/common/routes/routes.dart';
-import 'package:sm_test/common/theme/theme.dart';
+import 'package:sm_test/app/routes/routes.dart';
+import 'package:sm_test/app/themes/themes.dart';
 
 class Apps extends StatelessWidget {
   const Apps({super.key});
